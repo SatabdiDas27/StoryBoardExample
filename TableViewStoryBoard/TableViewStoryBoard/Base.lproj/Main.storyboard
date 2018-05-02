@@ -233,7 +233,7 @@
         <!--Choose Game-->
         <scene sceneID="6dW-NH-WWR">
             <objects>
-                <tableViewController title="Choose Game" id="Odd-Vp-FYX" sceneMemberID="viewController">
+                <tableViewController title="Choose Game" id="Odd-Vp-FYX" customClass="GamePickerViewController" customModule="TableViewStoryBoard" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Srw-XL-eVX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -255,6 +255,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="g6q-0V-XlS" kind="unwind" identifier="SaveGameDetails" unwindAction="saveGameDetail:" id="v1f-OT-VAW"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -264,6 +267,7 @@
                     </tableView>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3YH-hZ-Z9w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="g6q-0V-XlS" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3214" y="-165"/>
         </scene>
