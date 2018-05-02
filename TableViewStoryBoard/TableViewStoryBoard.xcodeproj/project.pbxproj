@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1097ADDB209A32D800310613 /* PlayerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1097ADDA209A32D800310613 /* PlayerDetailsViewController.swift */; };
+		109B0379209A6207004DEAEC /* GamePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109B0378209A6207004DEAEC /* GamePickerViewController.swift */; };
 		10CC508820978E73009F7428 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CC508720978E73009F7428 /* AppDelegate.swift */; };
 		10CC508A20978E73009F7428 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CC508920978E73009F7428 /* ViewController.swift */; };
 		10CC508D20978E73009F7428 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10CC508B20978E73009F7428 /* Main.storyboard */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1097ADDA209A32D800310613 /* PlayerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailsViewController.swift; sourceTree = "<group>"; };
+		109B0378209A6207004DEAEC /* GamePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePickerViewController.swift; sourceTree = "<group>"; };
 		10CC508420978E73009F7428 /* TableViewStoryBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewStoryBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10CC508720978E73009F7428 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10CC508920978E73009F7428 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +115,8 @@
 				10CC50B72097C6B1009F7428 /* PlayerModel.swift */,
 				10CC50B92097C956009F7428 /* PlayerViewModel.swift */,
 				10CC50B52097C4B5009F7428 /* PlayersTableViewController.swift */,
+				1097ADDA209A32D800310613 /* PlayerDetailsViewController.swift */,
+				109B0378209A6207004DEAEC /* GamePickerViewController.swift */,
 				10CC508B20978E73009F7428 /* Main.storyboard */,
 				10CC508E20978E73009F7428 /* Assets.xcassets */,
 				10CC509020978E73009F7428 /* LaunchScreen.storyboard */,
@@ -271,9 +277,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				109B0379209A6207004DEAEC /* GamePickerViewController.swift in Sources */,
 				10CC50BC2097D641009F7428 /* PlayerCell.swift in Sources */,
 				10CC508A20978E73009F7428 /* ViewController.swift in Sources */,
 				10CC50BA2097C956009F7428 /* PlayerViewModel.swift in Sources */,
+				1097ADDB209A32D800310613 /* PlayerDetailsViewController.swift in Sources */,
 				10CC508820978E73009F7428 /* AppDelegate.swift in Sources */,
 				10CC50B82097C6B1009F7428 /* PlayerModel.swift in Sources */,
 				10CC50B62097C4B5009F7428 /* PlayersTableViewController.swift in Sources */,
