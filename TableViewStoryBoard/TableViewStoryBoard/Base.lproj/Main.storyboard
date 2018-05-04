@@ -12,27 +12,45 @@
         <!--Gestures-->
         <scene sceneID="7Vs-1t-Y1S">
             <objects>
-                <viewController id="CCy-6U-ApZ" sceneMemberID="viewController">
+                <viewController id="CCy-6U-ApZ" customClass="GestureViewController" customModule="TableViewStoryBoard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2I5-hP-yBo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Second Tab" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hht-6X-u96">
-                                <rect key="frame" x="142" y="285" width="91" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wUW-H7-G1E">
+                                <rect key="frame" x="0.0" y="0.0" width="99" height="618"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="99" id="np5-TL-lEe"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QrG-sx-fpq">
+                                <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="slideinView:" destination="CCy-6U-ApZ" eventType="touchDown" id="539-Kw-JK6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wUW-H7-G1E" firstAttribute="top" secondItem="2I5-hP-yBo" secondAttribute="top" id="46R-3o-S0w"/>
+                            <constraint firstItem="QrG-sx-fpq" firstAttribute="centerX" secondItem="2I5-hP-yBo" secondAttribute="centerX" id="kYT-d2-GmW"/>
+                            <constraint firstItem="wUW-H7-G1E" firstAttribute="bottom" secondItem="w7X-Em-05a" secondAttribute="bottom" id="mPc-TN-wSB"/>
+                            <constraint firstItem="QrG-sx-fpq" firstAttribute="centerY" secondItem="2I5-hP-yBo" secondAttribute="centerY" id="x11-RD-XBB"/>
+                            <constraint firstItem="wUW-H7-G1E" firstAttribute="leading" secondItem="w7X-Em-05a" secondAttribute="leading" id="x5P-p5-FIY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="w7X-Em-05a"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Gestures" image="Gestures" id="wDA-7f-Gr9"/>
+                    <connections>
+                        <outlet property="viewToAnimate" destination="wUW-H7-G1E" id="Nwg-KX-CU2"/>
+                        <outlet property="viewWidthConstraint" destination="np5-TL-lEe" id="ChL-tO-vyK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AyS-zd-Fk3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="125" y="518"/>
+            <point key="canvasLocation" x="124" y="517.6911544227886"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="hou-xg-pG0">

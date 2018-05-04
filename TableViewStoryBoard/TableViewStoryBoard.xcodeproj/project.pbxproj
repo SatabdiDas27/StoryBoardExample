@@ -12,6 +12,7 @@
 		109B037B209A63E4004DEAEC /* GamePickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109B037A209A63E4004DEAEC /* GamePickerModel.swift */; };
 		109B037D209A6433004DEAEC /* GamePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109B037C209A6433004DEAEC /* GamePickerViewModel.swift */; };
 		109B0380209CE057004DEAEC /* Players.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 109B037E209CE057004DEAEC /* Players.storyboard */; };
+		109B0382209CE579004DEAEC /* GestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109B0381209CE579004DEAEC /* GestureViewController.swift */; };
 		10CC508820978E73009F7428 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CC508720978E73009F7428 /* AppDelegate.swift */; };
 		10CC508A20978E73009F7428 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CC508920978E73009F7428 /* ViewController.swift */; };
 		10CC508D20978E73009F7428 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10CC508B20978E73009F7428 /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		109B037A209A63E4004DEAEC /* GamePickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePickerModel.swift; sourceTree = "<group>"; };
 		109B037C209A6433004DEAEC /* GamePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePickerViewModel.swift; sourceTree = "<group>"; };
 		109B037F209CE057004DEAEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TableViewStoryBoard/Base.lproj/Players.storyboard; sourceTree = "<group>"; };
+		109B0381209CE579004DEAEC /* GestureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureViewController.swift; sourceTree = "<group>"; };
 		10CC508420978E73009F7428 /* TableViewStoryBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewStoryBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10CC508720978E73009F7428 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10CC508920978E73009F7428 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				109B037A209A63E4004DEAEC /* GamePickerModel.swift */,
 				109B037C209A6433004DEAEC /* GamePickerViewModel.swift */,
 				109B0378209A6207004DEAEC /* GamePickerViewController.swift */,
+				109B0381209CE579004DEAEC /* GestureViewController.swift */,
 				10CC508B20978E73009F7428 /* Main.storyboard */,
 				109B037E209CE057004DEAEC /* Players.storyboard */,
 				10CC508E20978E73009F7428 /* Assets.xcassets */,
@@ -288,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				109B037B209A63E4004DEAEC /* GamePickerModel.swift in Sources */,
+				109B0382209CE579004DEAEC /* GestureViewController.swift in Sources */,
 				109B0379209A6207004DEAEC /* GamePickerViewController.swift in Sources */,
 				109B037D209A6433004DEAEC /* GamePickerViewModel.swift in Sources */,
 				10CC50BC2097D641009F7428 /* PlayerCell.swift in Sources */,
