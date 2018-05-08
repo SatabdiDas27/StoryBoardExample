@@ -19,8 +19,12 @@ class GestureViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-       self.viewWidthConstraint.constant = 0.0
+    override func viewDidAppear(_ animated: Bool) {
+       self.viewToAnimate.layoutIfNeeded()
+        self.viewWidthConstraint.constant = 0.0
+       //let deltaX:CGFloat = 70.0
+       //  self.viewToAnimate.center = CGPoint(x: self.viewToAnimate.center.x - deltaX, y: self.viewToAnimate.center.y)
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,9 +33,11 @@ class GestureViewController: UIViewController {
     }
     
     @IBAction func slideinView(_ sender: Any) {
-        
-        UIView.animate(withDuration: 10.0, delay: 2.0, options: .curveEaseInOut, animations: {
-            self.viewWidthConstraint.constant = 99.0
+        //UIView.setAnimationsEnabled(true)
+        self.viewWidthConstraint.constant = 99.0
+        UIView.animate(withDuration: 0.05, delay: 0.0, options: .curveEaseIn, animations: {
+            
+         self.view.layoutIfNeeded()
             }, completion:nil)
     
     }

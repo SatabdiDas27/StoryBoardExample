@@ -50,6 +50,15 @@ class GamePickerViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let cellForHeader = tableView.dequeueReusableCell(withIdentifier: "HeaderViewCell")
+        return cellForHeader?.contentView
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 40.0
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "SaveGameDetails",
             let cell = sender as? UITableViewCell,
